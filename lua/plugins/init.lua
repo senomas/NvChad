@@ -201,6 +201,7 @@ local plugins = {
    },
 
    ["folke/which-key.nvim"] = {
+      disable = true,
       opt = true,
       setup = function()
          nvchad.packer_lazy_load "which-key.nvim"
