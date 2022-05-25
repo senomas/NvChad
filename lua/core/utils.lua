@@ -160,12 +160,9 @@ nvchad.no_WhichKey_map = function(mappings)
       for mode, keymap in pairs(value) do
          if not vim.tbl_contains(ignore_modes, mode) then
             for keybind, cmd in pairs(keymap) do
-               for k, v in pairs(value["mode_opts"]) do
-               end
-
                -- disabled keys will not have cmd set
                if cmd ~= "" and cmd[1] then
-                  nvchad.map(mode, keybind, cmd[1])
+                  nvchad.map(mode, keybind, cmd[1], value["mode_opts"] or nil)
                end
             end
          end
