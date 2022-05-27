@@ -4,3 +4,4 @@ local o = vim.o
 o.foldmethod = "indent"
 o.foldlevel = 8
 
+require("custom.snips")
