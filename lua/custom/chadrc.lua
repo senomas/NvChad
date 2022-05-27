@@ -20,6 +20,10 @@ if hasTelescope then
    end
 end
 
+require'lspconfig'.gopls.setup{}
+require'lspconfig'.golangci_lint_ls.setup{}
+require'lspconfig'.graphql.setup{}
+
 M.options = {
    user = function()
        require("custom.options")
