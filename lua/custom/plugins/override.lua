@@ -10,5 +10,11 @@ return {
             },
          },
       },
+   },
+   ["kyazdani42/nvim-tree.lua"] = {
+      view = {
+         side = "left",
+         width = 40,
+      }
    }
 }
