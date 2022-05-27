@@ -14,7 +14,8 @@ M.general = {
       ["<C-l>"] = { "<cmd> Gitsigns blame_line<CR>", "    git blame"},
 
       -- luasnip
-      ["<leader>ll"] = { "<cmd> source ~/.config/nvim/lua/custom/snips.lua<CR>", "   reload snips" }
+      ["<leader>llr"] = { "<cmd> source ~/.config/nvim/lua/custom/snips/init.lua<CR>", "   reload snips" },
+      ["<leader>llg"] = { "<cmd> e ~/.config/nvim/lua/custom/snips/go.lua<CR>", "   edit snips/go"},
    }
 }
 
