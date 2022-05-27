@@ -10,9 +10,7 @@ local M = {}
 
 M.mappings = require "custom.mappings"
 
-M.plugins = {
-   user = require "custom.plugins"
-}
+M.plugins = require "custom.plugins"
 
 require('telescope').load_extension('neoclip')
 
