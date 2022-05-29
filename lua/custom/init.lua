@@ -1,7 +1,7 @@
 -- load your globals, autocmds here or anything .__.
-local o = vim.o
+local opt = vim.opt
 
-o.foldmethod = "indent"
-o.foldlevel = 8
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()"
 
 require("custom.snips")

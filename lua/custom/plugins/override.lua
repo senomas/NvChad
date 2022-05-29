@@ -16,5 +16,24 @@ return {
          side = "left",
          width = 40,
       }
+   },
+   ["nvim-treesitter/nvim-treesitter"] = {
+      ensure_installed = {
+         "lua",
+         "vim",
+         "go",
+         "gomod",
+         "gowork",
+         "java",
+         "rust",
+         "javascript",
+         "json",
+         "typescript",
+         "tsx",
+         "vue",
+         "html",
+         "yaml",
+         "graphql",
+      },
    }
 }
