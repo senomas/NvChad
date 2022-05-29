@@ -169,7 +169,7 @@ M.lspconfig = {
          "   lsp references",
       },
 
-      ["<leader>lf"] = {
+      ["<leader>ff"] = {
          function()
             vim.diagnostic.open_float()
          end,

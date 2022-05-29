@@ -15,21 +15,19 @@ ls.add_snippets("go", {
 })
 
 ls.add_snippets("go",  {
-   s("mock.count", {
+   s("mock_count", {
       t("mock.ExpectQuery(QuoteMeta(`SELECT "),
       i(1, "count(*)"),
       t(" FROM "),
       i(2, "table"),
       t("`)).WithArgs("),
       i(3, "NoArgs..."),
-      isn(1, {
-         t({
-            ").",
-            "WillReturnRows(sqlmock.NewRows([]string{\"count\"}).",
-            "AddRow("
-         }),
-         i(4, "count"),
-         t("))")
-      })
+      t({
+         ").",
+         "   WillReturnRows(sqlmock.NewRows([]string{\"count\"}).",
+         "   AddRow("
+      }),
+      i(4, "count"),
+      t("))")
    })
 })
