@@ -6,8 +6,8 @@ end
 
 local options = {
    filters = {
-      dotfiles = false,
-      exclude = { "custom" },
+      dotfiles = true,
+      exclude = { "custom", ".gitignore" },
    },
    disable_netrw = true,
    hijack_netrw = true,
