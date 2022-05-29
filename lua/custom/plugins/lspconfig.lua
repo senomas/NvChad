@@ -4,7 +4,7 @@ M.setup_lsp = function(attach, capabilities)
    local lspconfig = require "lspconfig"
 
    -- lspservers with default config
-   local servers = { "gopls", "graphql", "rust_analyzer", "dartls" }
+   local servers = { "gopls", "graphql", "rust_analyzer", "dartls", "yamlls" }
 
    for _, lsp in ipairs(servers) do
       lspconfig[lsp].setup {
