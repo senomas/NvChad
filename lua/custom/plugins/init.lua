@@ -1,10 +1,14 @@
 
 return {
    user = {
-      ["AckslD/nvim-neoclip.lua"] = {
-         requires = {},
+      ["nvim-telescope/telescope.nvim"] = {
+         requires = {
+            { "kdheepak/lazygit.nvim" },
+            { "AckslD/nvim-neoclip.lua" }
+         },
          config = function()
-            require('neoclip').setup()
+            require("telescope").load_extension("lazygit")
+            require("telescope").load_extension("neoclip")
          end,
       },
    },

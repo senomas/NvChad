@@ -15,7 +15,7 @@ return {
       view = {
          side = "left",
          width = 40,
-      }
+      },
    },
    ["nvim-treesitter/nvim-treesitter"] = {
       ensure_installed = {

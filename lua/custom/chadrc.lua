@@ -12,14 +12,6 @@ M.mappings = require "custom.mappings"
 
 M.plugins = require "custom.plugins"
 
-local hasTelescope, telescope = pcall(require, "telescope")
-if hasTelescope then
-   local hasNeoclip = pcall(require, "neoclip")
-   if hasNeoclip then
-      telescope.load_extension('neoclip')
-   end
-end
-
 M.options = {
    user = function()
        require("custom.options")
